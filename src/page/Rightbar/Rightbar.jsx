@@ -15,7 +15,6 @@ const Rightbar = () => {
   useEffect(() => {
     const getData = async () => {
       const res = await axios.get(baseUrl + `search/trending`);
-      console.log(res);
       setCoins(res.data.coins);
     };
     getData();

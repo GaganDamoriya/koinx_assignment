@@ -1,6 +1,8 @@
 .overview-div {
   background-color: white;
   padding: 5px 10px 5px 10px;
+  border-radius: 20px;
+  margin-top: 20px;
 }
 .fundamental-details {
   display: flex;

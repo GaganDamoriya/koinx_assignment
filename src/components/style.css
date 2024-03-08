@@ -91,6 +91,49 @@
 .mobileView {
   display: none;
 }
+.styling {
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0px 5px 0px 5px;
+}
+/* coin caraosel */
+.coinCarousel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 180px;
+  background-color: white;
+  padding: 5px;
+  justify-content: center;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.coinName {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.headg {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.priceg {
+  font-size: 1.5rem;
+}
+
+.coinCarousel img {
+  height: 27px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+.redcl {
+  color: red;
+  background-color: rgb(242, 129, 129);
+}
+.greencl {
+  color: green;
+  background-color: rgb(207, 243, 154);
+}
 
 @media screen and (max-width: 780px) {
   .navigate-link {

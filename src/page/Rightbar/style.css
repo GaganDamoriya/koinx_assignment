@@ -1,6 +1,7 @@
 .rightbar {
   margin-top: 35px;
   width: 40%;
+  overflow: hidden;
 }
 .get-started-div {
   width: 100%;

@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import CurrencyChart from "../../components/CurrencyChart";
 import { toplinks } from "../../components/constant";
 import Picktab from "../../components/topTabs/Picktab";
+import CoinCarousel from "../../components/CoinCarousel";
 
 const Dashboard = () => {
   const baseUrl = "https://api.coingecko.com/api/v3/";
@@ -19,7 +20,6 @@ const Dashboard = () => {
   useEffect(() => {
     const getData = async () => {
       const res = await axios.get(baseUrl + `coins/${id}`);
-      console.log(res);
       setCoin(res.data);
     };
     const getlistofCoin = async () => {
@@ -56,10 +56,16 @@ const Dashboard = () => {
       <div>
         {coin ? <Picktab viewLink={viewLink} coin={coin} /> : "loading.."}
       </div>
-      <div>You may also like</div>
-      <div>
+      <h2>You May also Like</h2>
+      <div className="listcoin">
         {coinslist.length > 0
-          ? coinslist.map((coin, id) => <span key={id}>{coin.name}</span>)
+          ? coinslist.map((coin, id) => <CoinCarousel coin={coin} />)
+          : "loading..."}
+      </div>
+      <h2>Trending</h2>
+      <div className="listcoin">
+        {coinslist.length > 0
+          ? coinslist.map((coin, id) => <CoinCarousel coin={coin} />)
           : "loading..."}
       </div>
     </div>

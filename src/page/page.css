@@ -5,11 +5,15 @@
   gap: 10px;
 }
 .outlet-renderer {
-  width: 100%;
+  width: 75%;
+  overflow-y: hidden;
 }
 
 @media screen and (max-width: 780px) {
   .rootlayout {
     flex-direction: column;
+  }
+  .outlet-renderer {
+    width: 100%;
   }
 }

@@ -1,0 +1,77 @@
+.rightbar {
+  margin-top: 35px;
+  width: 40%;
+}
+.get-started-div {
+  width: 100%;
+  min-width: 340px;
+  height: 450px;
+  background-color: rgb(48 71 248);
+  color: white;
+  border-radius: 20px;
+}
+.inner-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 450px;
+}
+.inner-div img {
+  width: 180px;
+  object-fit: contain;
+  margin: 15px 0px;
+}
+.inner-div button {
+  padding: 9px 20px 9px 20px;
+  background-color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+.trending-coin {
+  background-color: white;
+  width: 100%;
+}
+.trending-coin h2 {
+  padding: 10px 20px;
+}
+.coinlist {
+  display: flex;
+  flex-direction: column;
+}
+.token {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+  cursor: pointer;
+  &:hover {
+    border: 1.2px solid grey;
+  }
+  &:active {
+    transform: scale(1.05);
+  }
+}
+.token img {
+  height: 20px;
+  object-fit: contain;
+}
+.tk {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  font-size: 1.1rem;
+  gap: 5px;
+}
+@media screen and (max-width: 780px) {
+  .rightbar {
+    width: 100%;
+  }
+}

@@ -1,0 +1,15 @@
+.rootlayout {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  gap: 10px;
+}
+.outlet-renderer {
+  width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+  .rootlayout {
+    flex-direction: column;
+  }
+}
